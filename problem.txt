@@ -1,0 +1,1 @@
+In this code I added hover highlighting effect with CSS, when onclicked, buttons get ligther and larger in size. This onclick property was added with the help of JS in HTML elements but it seems onlick functions bypassess the initial css properties, so I have to add the highlighting hover effect with js. 
