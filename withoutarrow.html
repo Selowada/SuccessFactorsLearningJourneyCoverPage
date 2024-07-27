@@ -1,0 +1,186 @@
+<style type="text/css">
+    * {
+        box-sizing: border-box;
+    }
+
+    .item1 {
+        grid-column: 1/9;
+        grid-row: 1;
+    }
+
+    .item2 {
+        grid-column: 1/6;
+        grid-row: 2/8;
+        height: 600px;
+    }
+
+    .item3 {
+        grid-column: 6/9;
+        grid-row: 2/3;
+    }
+
+    .item4 {
+        grid-column: 6/9;
+        grid-row: 3/8;
+    }
+
+    .grid-container {
+        display: grid;
+        border-style: dashed;
+        border-width: 2px;
+        gap: 2px;
+        background-color: lightgrey;
+        padding: 0px;
+        width: 1050px;
+        grid-template-columns: repeat(8, 1fr);
+        grid-auto-rows: minmax(10px, auto);
+    }
+
+    .infiniteLoop {
+        display: block;
+        margin-top: 10px;
+        margin-left: 20px;
+        width: 180px;
+        height: 40px;
+    }
+
+    .btn-group button {
+        margin-top: 25px;
+        padding: 15px;
+        width: 65%;
+        border-radius: 20px;
+        border-color: black;
+        border-width: 1px;
+        box-shadow: 1px 1px 1px 2px gray;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        background-color: rgb(0, 114, 188);
+        color: white;
+    }
+
+
+
+
+
+    .gg {
+        background-color: rgba(255, 255, 255, 0.8);
+        text-align: center;
+        padding: 0px 0;
+        font-size: 30px;
+    }
+
+    .button:hover {
+        background-color: rgb(13, 145, 240)
+    }
+
+    .button:active {
+        background-color: gray;
+    }
+
+
+    .mainHeader {
+        font-size: 5px;
+        text-align: left;
+        margin-left: 10%;
+
+    }
+
+
+    .mainText {
+        font-size: 12px;
+        text-align: justify;
+        width: 400px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        line-height: 20px;
+        margin-left: 15px;
+    }
+
+    .mainFooter {
+        width: 300px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        bottom: 0;
+    }
+
+    .SectionsHeader {
+        font-size: 15px;
+        text-align: center;
+        font-family: sans-serif;
+        margin-top: 0px;
+        padding-bottom: 5px;
+    }
+
+    .programOverviewButton {
+        padding-top: 0;
+    }
+</style>
+<div class="grid-container">
+    <div class="item1 gg" style="background-color: white; "><img alt="" class="infiniteLoop" src="InfiniteLoop.png" />
+        <p class="headerText" style="font-size: 45px; color: 0072BC">GDPR Training for Marketing Experts</p>
+    </div>
+
+    <div class="item2 gg">
+        <h1 class="mainHeader" id="mainHeader" style="margin-top:15.0px;font-size:15.0px">GDPR Knowledge For Marketing
+            Experts</h1>
+
+        <div class="mainTextDiv">
+            <p class="mainText" id="mainText" style="margin-left:8%">In the realm of marketing, a profound understanding of the General Data Protection Regulation (GDPR) is indispensable for professionals seeking to navigate the evolving landscape of data privacy. Enacted by the European Union, GDPR mandates strict guidelines for the collection, processing, and storage of personal data, with a primary focus on safeguarding individuals privacy rights. Marketing experts must be well-versed in GDPR principles to ensure compliance and foster a transparent and ethical approach to data-driven campaigns. This regulation not only establishes clear boundaries for obtaining and utilizing consumer information but also empowers individuals with greater control over their personal data. Marketing strategies built on GDPR compliance not only mitigate legal risks but also cultivate trust among consumers, fostering long-lasting relationships. As the global digital landscape continues to evolve, marketing professionals equipped with comprehensive GDPR knowledge are better positioned to navigate the intricate balance between leveraging data for targeted campaigns and respecting individuals right to privacy.</p>
+        </div>
+
+        <div class="mainFooterDiv" id="mainFooterdiv" style="position:absolute;display:flex;left:50.0px">
+            <p class="mainFooter" id="mainFooter"
+                style="width:400.0px;font-weight:bold;font-size:13.0px;margin-left:2%;margin-bottom:0%;text-align:justify">
+                Please have a look at the program sections before moving on to the trainings from the menu above.</p>
+        </div>
+    </div>
+
+    <div class="item3 gg" style="padding:6.0px">
+        <div class="introVideo"><iframe allowfullscreen="" frameborder="2" height="250px" sandbox=""
+                src="https://www.youtube.com/embed/LcrtIgeVFMc?si=i3_FMnKCOqpoZxQv"
+                style="margin-top:5.0px; border-radius: 20px;" title="YouTube video player" width="325px"></iframe>
+        </div>
+    </div>
+
+    <div class="item4 gg" style="font-family:Arial, Helvetica, sans-serif;padding-top:20.0px">
+
+        <div class="btn-group">
+            <p class="SectionsHeader" style="margin:0.0;font-weight:bold;padding-bottom:10.0px">Sections</p>
+
+            <button id="programOverviewButton" class="programOverviewButton button"
+                onclick="document.getElementById('mainText').innerHTML = 'In the realm of marketing, a profound understanding of the General Data Protection Regulation (GDPR) is indispensable for professionals seeking to navigate the evolving landscape of data privacy. Enacted by the European Union, GDPR mandates strict guidelines for the collection, processing, and storage of personal data, with a primary focus on safeguarding individuals privacy rights. Marketing experts must be well-versed in GDPR principles to ensure compliance and foster a transparent and ethical approach to data-driven campaigns. This regulation not only establishes clear boundaries for obtaining and utilizing consumer information but also empowers individuals with greater control over their personal data. Marketing strategies built on GDPR compliance not only mitigate legal risks but also cultivate trust among consumers, fostering long-lasting relationships. As the global digital landscape continues to evolve, marketing professionals equipped with comprehensive GDPR knowledge are better positioned to navigate the intricate balance between leveraging data for targeted campaigns and respecting individuals right to privacy.';
+                 document.getElementById('mainHeader').innerHTML = 'GDPR Knowledge For Marketing Experts';
+                 document.getElementById('programOverviewButton').style.backgroundColor='rgb(0, 139, 237)'; 
+                 document.getElementById('programOverviewButton').style.padding='18px';
+                 document.getElementById('dpasandsccsButton').style.backgroundColor='rgb(0, 114, 188)';
+                 document.getElementById('dpasandsccsButton').style.padding='15px';
+                 document.getElementById('doubleOptInButton').style.backgroundColor='rgb(0, 114, 188)'; 
+                 document.getElementById('doubleOptInButton').style.padding='15px';
+                 //document.getElementById('doubleOptInButton').classList.add('button');
+                 ">   Program Overview
+            </button>
+                <button id="dpasandsccsButton" class="dpasandsccsButton button"
+                onclick="document.getElementById('mainText').innerHTML = 'Data Protection Agreements (DPAs) are contractual frameworks delineating data processing terms and responsibilities between entities, ensuring compliance with the General Data Protection Regulation (GDPR). These agreements outline how personal data is handled, establishing a transparent and legally sound foundation for marketing initiatives. On the other hand, Standard Contractual Clauses (SCCs) are pre-approved templates endorsed by the European Union to facilitate secure cross-border data transfers. SCCs provide a standardized framework for international data flow, particularly relevant for global marketing campaigns. For marketing experts, a comprehensive understanding of both DPAs and SCCs is imperative, as they play pivotal roles in navigating the intricacies of data privacy laws and fostering trust with consumers in an increasingly regulated digital landscape' ; 
+                document.getElementById('mainHeader').innerHTML = 'Difference Between DPAs and SCCs';
+                document.getElementById('dpasandsccsButton').style.backgroundColor='rgb(0, 139, 237)';
+                document.getElementById('dpasandsccsButton').style.padding='18px';
+                document.getElementById('programOverviewButton').style.backgroundColor='rgb(0, 114, 188)'
+                document.getElementById('programOverviewButton').style.padding='15px';
+                document.getElementById('doubleOptInButton').style.backgroundColor='rgb(0, 114, 188)'; 
+                document.getElementById('doubleOptInButton').style.padding='15px';
+                ">   DPAs
+                and SCCs
+            </button>
+                <button id="doubleOptInButton" class="doubleOptInButton button"
+                onclick="document.getElementById('mainText').innerHTML = 'In order to enhance user privacy and adhere to data protection regulations, the implementation of a double opt-in process is pivotal. This multifaceted approach ensures that individuals provide explicit consent, giving their authoritative approval twice. It involves an initial action, such as signing up or subscribing, followed by a confirmation step through a verification link or code. This meticulous process not only fortifies user engagement but also establishes a robust foundation of trust, safeguarding both the user and the entity collecting their information.';
+                document.getElementById('mainHeader').innerHTML = 'Double Opt. In';
+                document.getElementById('doubleOptInButton').style.backgroundColor='rgb(0, 139, 237)'; 
+                document.getElementById('doubleOptInButton').style.padding='18px';
+                document.getElementById('programOverviewButton').style.backgroundColor='rgb(0, 114, 188)';
+                document.getElementById('programOverviewButton').style.padding='15px';
+                document.getElementById('dpasandsccsButton').style.backgroundColor='rgb(0, 114, 188)';
+                document.getElementById('dpasandsccsButton').style.padding='15px'
+                 ">Double
+                Opt. In
+            </button>
+        </div>
+    </div>
+</div>
